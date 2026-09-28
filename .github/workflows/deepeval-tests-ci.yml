@@ -1,18 +1,19 @@
 name: DeepEval Tests
 
 on:
-  push:
-    branches: [main, master]
-    paths:
-      - 'deepeval-tests/**'
-      - 'llm-multiroute/**'
-      - '.github/workflows/deepeval-tests-ci.yml'
-  pull_request:
-    branches: [main, master]
-    paths:
-      - 'deepeval-tests/**'
-      - 'llm-multiroute/**'
-      - '.github/workflows/deepeval-tests-ci.yml'
+  # Auto-triggers disabled: DeepEval needs paid LLM API keys. Run manually via "Run workflow".
+  # push:
+  #  branches: [main, master]
+  #  paths:
+  #    - 'deepeval-tests/**'
+  #    - 'llm-multiroute/**'
+  #    - '.github/workflows/deepeval-tests-ci.yml'
+  # pull_request:
+  #  branches: [main, master]
+  #  paths:
+  #    - 'deepeval-tests/**'
+  #    - 'llm-multiroute/**'
+  #    - '.github/workflows/deepeval-tests-ci.yml'
   workflow_dispatch:
 
 env:
